@@ -1,35 +1,33 @@
-# 🔺 Looping(Patterns)-Pascal's Triangle Generator in Python
+# Ex 2d:Looping(Patterns)-Pattern printing using a character
 
-This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
+## Aim
 
----
+To write a Python program that takes a character as input and prints a pattern of the same character.
 
-## 🎯 Aim
+## Algorithm
 
-To write a Python program that generates **Pascal's Triangle** using numbers. The number of rows is accepted from the user.
+1.Start the program.
 
----
+2.Read a single character from the user.
 
-## 🧠 Algorithm
+3.Use a loop from 1 to 5.
 
-1. Start the program.
-2. Input the number of rows from the user.
-3. Loop from 0 to the number of rows.
-4. For each row:
-   - Print appropriate spaces to shape the triangle.
-   - Compute values using the formula:  
-     \[
-     C(n, k) = \frac{n!}{k!(n-k)!}
-     \]
-5. Print all rows of Pascal’s Triangle.
-6. End the program.
+4.In each iteration, print the character repeated i times with spaces.
 
----
+5.End the program.
 
-## 🧪 Program
-Add Code Here
+## Program
+```
+char = input()
+
+rows = 5  
+
+for i in range(1, rows + 1):
+    print(" ".join([char] * i))
+```
 
 ## Sample Output
+<img width="405" height="458" alt="image" src="https://github.com/user-attachments/assets/5a8a2d9b-30d3-4e84-8b5f-9ca14d2c1c6b" />
 
 ## Result
-
+Thus, the program successfully prints a pattern using the same character entered by the user.
