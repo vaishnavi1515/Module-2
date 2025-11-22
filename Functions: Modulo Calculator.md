@@ -1,19 +1,43 @@
-# Functions in Python: Modulo Calculator
+# Ex 2b:Functions: Check Perfect Number using Function
 
-## 🎯 Aim
-To write a Python program that defines a function which accepts two values and returns their **modulo** using the `%` operator.
+## Aim
+To write a Python program to check whether a given number is a Perfect number using a user-defined function.
+## Algorithm
+1.Start the program.
 
-## 🧠 Algorithm
-1. Define a function called `result` that takes two arguments `a` and `b`.
-2. Inside the function, compute the modulo using `a % b`.
-3. Print the result of the modulo operation.
-4. Get two integer inputs from the user.
-5. Call the `result` function with the user-provided values.
+2.Define a function that:
+     Takes a number as input.
+     Finds all its proper divisors.
+     Adds them and returns the sum.
 
-## 🧾 Program
+3.Read a number from the user.
 
-Add code Here
+4.Call the function and compare the sum of divisors with the number.
+
+5.If both are equal, it is a Perfect number; otherwise, it is not.
+
+6.Display the result.
+
+7.End the program.
+
+## Program
+```
+def is_perfect_number(num):
+    if num <= 0:
+        return False
+    divisors_sum = sum(i for i in range(1, num) if num % i == 0)
+    return divisors_sum == num
+
+n = int(input())
+
+if is_perfect_number(n):
+    print("The number is a Perfect number!")
+else:
+    print("The number is not a Perfect number!")
+```
 
 ## Output
+<img width="754" height="215" alt="image" src="https://github.com/user-attachments/assets/af8de547-8b6a-4150-9ed9-81d7f22c854d" />
 
 ## Result
+Thus, the program successfully checks whether a given number is a Perfect number using the concept of functions.
